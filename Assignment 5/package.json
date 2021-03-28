@@ -1,0 +1,16 @@
+{
+  "name": "cslab5",
+  "version": "1.0.0",
+  "description": "lab 5",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Shubham Warghade 10467133",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1"
+  }
+}
