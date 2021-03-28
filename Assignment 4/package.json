@@ -1,0 +1,16 @@
+{
+  "name": "cs-546-mongodb",
+  "version": "1.0.0",
+  "description": "Lab 4 MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shubham Warghade 10467133",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.6.4",
+    "save": "^2.4.0"
+  }
+}
