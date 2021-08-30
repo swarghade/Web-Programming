@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Show Finder</title>
+    <link rel="stylesheet" href="/public/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    {{!--
+    <link rel="shortcut icon" type="image/jpg" href="http://localhost:3000/public/img/logo.png"> --}}
+</head>
+
+<body style="background-color: rgb(197, 197, 197);">
+    <header>
+        <div class="row">
+            <div class="col-1">
+                <a href="http://localhost:3000/"> <img src="/public/img/logo.png" class="logo" alt=""></a>
+            </div>
+            <div class="col-2">
+                <h1>Show Finder</h1>
+            </div>
+        </div>
+
+        <p>This site will help you explore various shows and movies from TV MAZE API. You can search by search term.
+        </p>
+    </header>
+    <main>
+        <div class="search-form justify-content-center">
+            <form id="searchForm">
+                <div class="justify-content-center">
+                    <label for="search_term" style="margin-left: 50vh; font-size:large;">Search Here</label>
+                    {{!-- <h2 class="title"></h2> --}}
+                    <br>
+                    <input type="search" placeholder="Type Here" id="search_term" class="input" required />
+                    <br>
+                    <br>
+                    <button type="submit" value="submit" class="button" style="vertical-align:middle"
+                        id="submitSearch"><span>Find
+                            Now</span></button>
+                </div>
+            </form>
+        </div>
+        <h1 id="error" style="color: red;">Only Spaces entered</h1>
+
+
+
+        <h1 id="error1" style="color: red;">No Result Found</h1>
+        <ul id="showList">
+
+        </ul>
+
+        <div id="show">
+
+        </div>
+        <a href="/" class="btn btn-outline-dark" id="homeLink">Back To All Shows</a>
+        {{!-- {{{body}}} --}}
+
+    </main>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="public/js/ajax.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <footer>
+        <h2>Shubham Warghade</h2>
+        <h3>10467133</h3>
+        <p>I hope this submission gets good grades</p>
+    </footer>
+</body>
+
+</html>
