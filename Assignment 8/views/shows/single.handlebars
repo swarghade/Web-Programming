@@ -1,0 +1,37 @@
+<section>
+    <div>
+        <h1>{{show.name}}</h1>
+        <img src="{{show.image.medium}}" alt="">
+        <dl>
+            <dt>
+                Language
+            </dt>
+            <dd>{{show.language}}</dd>
+            <dt>
+                Genres
+            </dt>
+            <dd>
+                <ul>
+                    {{#each show.genres}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </dd>
+            <dt>
+                Average
+            </dt>
+            <dd>{{{show.rating.average}}}</dd>
+            <dt>
+                Network
+            </dt>
+            <dd>{{show.network.name}}</dd>
+            <dt>
+                Summary
+            </dt>
+            <dd>{{show.summary}}</dd>
+        </dl>
+    </div>
+    <div>
+        <a href="/" class="btn">Make another Search</a>
+    </div>
+</section>
